@@ -1,0 +1,9 @@
+for i in range(3):
+    i += 1
+    login = input('Логин:')
+    password = input('Пароль:')
+    if login == 'admin' and password == 'trGd3j':
+        print('Авторизация пройдена с попытки', i)
+        break
+if i == 3:
+    print('Доступ запрещён')
